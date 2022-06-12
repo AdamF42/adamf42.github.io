@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adamo Fapohunda</title>
-    <link>http://www.example.com/</link>
+    <link>https://adamf42.github.io/</link>
     <description>Recent content on Adamo Fapohunda</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://adamf42.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SafeLab: an IoT Project</title>
-      <link>http://www.example.com/projects/safelab/</link>
+      <link>https://adamf42.github.io/projects/safelab/</link>
       <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/projects/safelab/</guid>
+      <guid>https://adamf42.github.io/projects/safelab/</guid>
       <description>Introduction This project was created for the Internet of Things course 19/20 of the University of Bologna.
 Requirements We want to create an ambient intelligence system based on IoT devices and technologies for monitoring environmental parameters and people inside a room (e.g. IT laboratory). Specifically, the system must be able to:
  Count the number of people currently present in the room. The detection must be carried out using appropriate sensors (eg.</description>
@@ -20,10 +20,10 @@ Requirements We want to create an ambient intelligence system based on IoT devic
     
     <item>
       <title>Features Of CoderPortfolio</title>
-      <link>http://www.example.com/posts/featuresofcoderportfolio/</link>
+      <link>https://adamf42.github.io/posts/featuresofcoderportfolio/</link>
       <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/featuresofcoderportfolio/</guid>
+      <guid>https://adamf42.github.io/posts/featuresofcoderportfolio/</guid>
       <description>Change Point &amp;ldquo;private content&amp;rdquo; short code added. It is now possible to communicate your personal hobby and your own content.
 You can use it easily. Please see &amp;ldquo;theme-demo&amp;rdquo; for details and demo.
 An animation of red underline was added to Anchor. The site became a little fun and colorful.
@@ -33,10 +33,10 @@ Changed the color scheme of code highlight.</description>
     
     <item>
       <title>Theme Demo</title>
-      <link>http://www.example.com/posts/theme-demo/</link>
+      <link>https://adamf42.github.io/posts/theme-demo/</link>
       <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/theme-demo/</guid>
+      <guid>https://adamf42.github.io/posts/theme-demo/</guid>
       <description>Style Demo h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading  This is bold text
 This is bold text
 This is italic text
@@ -49,30 +49,30 @@ $$ \sum_{n=1}^{\infty} 2^{-n} = 1 $$
     
     <item>
       <title>Creating a New Theme</title>
-      <link>http://www.example.com/posts/creating-a-new-theme/</link>
+      <link>https://adamf42.github.io/posts/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/creating-a-new-theme/</guid>
+      <guid>https://adamf42.github.io/posts/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>http://www.example.com/posts/hugo-template-primer/</link>
+      <link>https://adamf42.github.io/posts/hugo-template-primer/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/hugo-template-primer/</guid>
+      <guid>https://adamf42.github.io/posts/hugo-template-primer/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates.</description>
     </item>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>http://www.example.com/posts/hugoisforlovers/</link>
+      <link>https://adamf42.github.io/posts/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/hugoisforlovers/</guid>
+      <guid>https://adamf42.github.io/posts/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
@@ -83,10 +83,10 @@ Follow the following steps:
     
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>http://www.example.com/posts/migrate-from-jekyll/</link>
+      <link>https://adamf42.github.io/posts/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/migrate-from-jekyll/</guid>
+      <guid>https://adamf42.github.io/posts/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
@@ -94,29 +94,29 @@ Follow the following steps:
     
     <item>
       <title>About Me</title>
-      <link>http://www.example.com/about/</link>
+      <link>https://adamf42.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/about/</guid>
+      <guid>https://adamf42.github.io/about/</guid>
       <description> Software Developer with 3+ years of experience in web design and development across diverse industries. Having good implementation knowledge of OOPs concepts. Proficient in implementing new features based on user feedback. Passionate about how software can be better developed, maintained and tested through Clean Code, TDD and Functional Programming.
  </description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>http://www.example.com/contact/</link>
+      <link>https://adamf42.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/contact/</guid>
+      <guid>https://adamf42.github.io/contact/</guid>
       <description>Want Contact? Have questions or suggestions? Feel free to open an issue on GitHub or send me an email.</description>
     </item>
     
     <item>
       <title>Curriculum</title>
-      <link>http://www.example.com/curriculum/</link>
+      <link>https://adamf42.github.io/curriculum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/curriculum/</guid>
+      <guid>https://adamf42.github.io/curriculum/</guid>
       <description>  *{margin:0;padding:0} html, body {height:100%;width:100%;overflow:hidden} table {height:100%;width:100%;table-layout:static;border-collapse:collapse} iframe {height:100%;width:100%} .header {border-bottom:1px solid #000} .content {height:100%}      Did you experience some trouble? You can directly download the curriculum at the following link.    </description>
     </item>
     
