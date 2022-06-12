@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Adamo Fapohunda</title>
+    <link>http://www.example.com/projects/</link>
+    <description>Recent content in Projects on Adamo Fapohunda</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SafeLab: an IoT Project</title>
+      <link>http://www.example.com/projects/safelab/</link>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/projects/safelab/</guid>
+      <description>Introduction This project was created for the Internet of Things course 19/20 of the University of Bologna.
+Requirements We want to create an ambient intelligence system based on IoT devices and technologies for monitoring environmental parameters and people inside a room (e.g. IT laboratory). Specifically, the system must be able to:
+ Count the number of people currently present in the room. The detection must be carried out using appropriate sensors (eg.</description>
+    </item>
+    
+  </channel>
+</rss>

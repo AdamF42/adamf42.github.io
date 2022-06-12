@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Adamo Fapohunda">
+    <meta name="description" content="http://www.example.com">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta property="og:site_name" content="Adamo Fapohunda">
+    <meta property="og:title" content="
+  SafeLab: an IoT Project - Adamo Fapohunda
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.example.com/projects/safelab/">
+    <meta property="og:image" content="http://www.example.com">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="http://www.example.com/projects/safelab/">
+    <meta name="twitter:image" content="http://www.example.com">
+
+    <base href="http://www.example.com/projects/safelab/">
+    <title>
+  SafeLab: an IoT Project - Adamo Fapohunda
+</title>
+
+    <link rel="canonical" href="http://www.example.com/projects/safelab/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="http://www.example.com/index.xml" type="application/rss+xml" title="Adamo Fapohunda">
+      <link href="http://www.example.com/index.xml" rel="feed" type="application/rss+xml" title="Adamo Fapohunda" />
+    
+
+    <meta name="generator" content="Hugo 0.98.0" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">Adamo Fapohunda</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="http://www.example.com/about">About</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="http://www.example.com/projects">Portfolio</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="http://www.example.com/curriculum">CV</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="http://www.example.com/contact">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>SafeLab: an IoT Project</h1>
+    </header>
+
+    <h2 id="introduction">Introduction</h2>
+<p>This project was created for the Internet of Things course 19/20 of the University of Bologna.</p>
+<h3 id="requirements">Requirements</h3>
+<p>We want to create an ambient intelligence system based on IoT devices and technologies for monitoring environmental parameters and people inside a room (e.g. IT laboratory). Specifically, the system must be able to:</p>
+<ul>
+<li>Count the number of people currently present in the room. The detection must be carried out using appropriate sensors (eg. PIR sensors) located near the passage/access door; obviously, it is necessary to distinguish entry/exit events from the passage. The use of cameras and computer vision techniques is not required.</li>
+<li>Detect and acquire environmental parameters of the room, such as temperature, humidity, and pressure.</li>
+<li>Provide for the storage of the acquired data (number of people in the environment, environmental parameters mentioned above) in an appropriate time-series database created in INFLUX 2.0.</li>
+<li>Provide suitable interfaces for displaying sensor data using Grafana, or using custom interfaces.</li>
+<li>Provide forecasting techniques for the number of users in the room (in other words: predict how many users will be present in the room in the next X minutes) and the value of the environmental sensors. The forecast values must be stored using a time-series database (eg. Influx).</li>
+<li>Provide alerting mechanisms when the following alarm situations are detected: (i) the number of users is greater than a pre-established threshold; (ii) the temperature/humidity/pressure values are higher / lower than reference thresholds. The alarm notifications are addressed to the facility administrator and can consist of sending an email, an invocation of the REST API, a message on the TELEGRAM profile, etc. (the group chooses the type of notification).</li>
+</ul>
+<p>Moreover, we have set ourselves the aim of implementing the system using low-power and low-cost sensors and development boards.</p>
+<h3 id="proposed-solution">Proposed solution</h3>
+<p>Two smart devices were built which were implemented as Web Things. These Things are detected by the Mozilla Gateway which acts as a single access point to upload data to InfluxDB. The data uploaded to InfluxDB are then analyzed to carry out forecasting operations on the levels of environmental parameters and the number of people in the environment. The visualization of the data is provided through the Grafana dashboards. In addition, an alerting mechanism has been implemented to notify the user through Telegram in the event that the parameters of the environment reach critical levels.</p>
+<p><img src="/images/safelab.png" alt="Example image"></p>
+<h4 id="hardware">Hardware</h4>
+<p>Two NodeMCU single-board microcontrollers equipped with WiFi connectivity were used for the two objectives of the project: count the number of people inside the room; detect the environmental parameters.</p>
+<p>In order to collect and display the data, a Raspberry Pi 3, a single-board computer with a 64-bit ARM CPU equipped with an external hard disk drive (HDD) was used.</p>
+<h4 id="what-i-learned">What I learned</h4>
+<ul>
+<li>Docker and Docker-compose: used to distribute software in isolated containers that have the ability to communicate with each other;</li>
+<li>Mozilla WebThings Framework and Mozilla WebThings Gateway: used to solve the problem of the findability of Things connected to the local network. It is also able to automatically manage reconnection with devices;</li>
+<li>InfluxDB 2.0: used as a database for saving data in the form of a time series;</li>
+<li>Grafana: used to allow an interactive display of the data obtained;</li>
+<li>Telegram: used to notify the user of alerting situations.</li>
+<li>Arduino language (C / C ++): for programming NodeMCU boards;</li>
+<li>Javascript / Typescript: for building services;</li>
+<li>Python: for the study and implementation of forecasting methodologies on data and the construction of the forecasting service;</li>
+<li>Bash scripting.</li>
+</ul>
+<p><a href="https://github.com/AdamF42/SafeLab">Full Code</a></p>
+<p><a href="https://github.com/AdamF42/SafeLab/blob/master/Relazione/BozzaRelazione.pdf">Report (Italian Only)</a></p>
+
+  </article>
+</section>
+
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="sns-shares sp-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=http%3a%2f%2fwww.example.com%2fprojects%2fsafelab%2f&ref_src=twsrc%5Etfw&text=SafeLab%3a%20an%20IoT%20Project Adamo%20Fapohunda&tw_p=tweetbutton&url=http%3a%2f%2fwww.example.com%2fprojects%2fsafelab%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=http%3a%2f%2fwww.example.com%2fprojects%2fsafelab%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2fwww.example.com%2fprojects%2fsafelab%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+    
+     
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+    
+      <div class="sns-shares pc-sns-shares">
+        
+          <a class="sns-share twitter-share" href="https://twitter.com/intent/tweet?original_referer=http%3a%2f%2fwww.example.com%2fprojects%2fsafelab%2f&ref_src=twsrc%5Etfw&text=SafeLab%3a%20an%20IoT%20Project Adamo%20Fapohunda&tw_p=tweetbutton&url=http%3a%2f%2fwww.example.com%2fprojects%2fsafelab%2f"><i class="fab fa-twitter"></i></a>
+        
+        
+          <a class="fb btn sns-share fb-share" href="http://www.facebook.com/share.php?u=http%3a%2f%2fwww.example.com%2fprojects%2fsafelab%2f" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fab fa-facebook-f"></i></a>
+        
+        
+        
+        
+          <a class="sns-share linkedIn-share" href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2fwww.example.com%2fprojects%2fsafelab%2f"><i class="fab fa-linkedin"></i></a>
+        
+      </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>
